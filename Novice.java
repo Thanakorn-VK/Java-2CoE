@@ -6,13 +6,11 @@ public class Novice
     private int HP;
     private int EXP;
     private int LEVEL;
-    private int MONEY;
 
     public Novice(){
         HP = 500;
         EXP = 0;
         LEVEL = 1;
-        MONEY = 0;
     }
     public void att(){
         EXP = EXP + 1;
@@ -39,9 +37,6 @@ public class Novice
     }
     public int getLEVEL(){
         return LEVEL;
-    }
-    public int getMONEY(){
-        return MONEY;
     }
 
 }
