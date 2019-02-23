@@ -11,7 +11,7 @@ public class Bag
     private int Max;
     public Bag(){
         items = new ArrayList<Item>();
-        Max = 5;
+        Max = 10;
     }
     public boolean checkbag(){
         if(items.size() < Max) return true;

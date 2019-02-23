@@ -8,4 +8,10 @@ public class Knight extends Novice
         super.setEXP(exp);
         super.setLEVEL(level);
     }
+
+    public void BowlingBash(){
+        super.changeHP(60);
+        super.changeEXP(3);
+    }
+
 }

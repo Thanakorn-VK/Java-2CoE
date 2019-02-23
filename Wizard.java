@@ -8,5 +8,8 @@ public class Wizard extends Novice
         super.setEXP(exp);
         super.setLEVEL(level);
     }
-
+    public void MeteorStorm(){
+        super.changeHP(40);
+        super.changeEXP(3);
+    }
 }

@@ -13,13 +13,13 @@ public class Novice
         LEVEL = 1;
     }
     public void att(){
-        HP = HP - 32;
+        HP = HP - 24;
         EXP = EXP + 1;
         //if (EXP >= 5)
-        while(EXP >= 5){
+        while(EXP >= 10){
             LEVEL = LEVEL + 1;
             HP = HP + 100;
-            EXP-= 5; // EXP = EXP - 5;
+            EXP-= 10; // EXP = EXP - 5;
         }
     }
     public void dead(){
@@ -33,10 +33,10 @@ public class Novice
     }
     public void bootExp(int boot){
         EXP = EXP + boot;
-        while(EXP >= 5){
+        while(EXP >= 10){
             LEVEL = LEVEL + 1;
             HP = HP + 100;
-            EXP-= 5; // EXP = EXP - 5;
+            EXP-= 10; // EXP = EXP - 5;
         }
     }
 
@@ -66,4 +66,18 @@ public class Novice
     public void setLEVEL(int level){
         LEVEL = level;
     }
+    public void changeHP(int hp){
+        HP = HP - hp;
+    }
+    public void changeEXP(int exp){
+        EXP = EXP + exp;
+        while(EXP >= 10){
+            LEVEL = LEVEL + 1;
+            HP = HP + 100;
+            EXP-= 10; // EXP = EXP - 5;
+        }
+    }
+    /*public void changeLEVEL(int level){
+
+    }*/
 }

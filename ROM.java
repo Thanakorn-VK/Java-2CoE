@@ -81,7 +81,7 @@ public class ROM
             else if(career.equals("wizard") == true){
                 while(wz.getHP() != 0){
                     //--------------------------
-                    System.out.println(" 1 to attack // 2 to hit // 3 open inventory // 99 buy more bag // 0 Eng Game");
+                    System.out.println(" 1 to attack // 2 to hit // 3 open inventory // 4 use MeteorStorm // 99 buy more bag // 0 Eng Game");
                     int data = sc.nextInt();
                     //--------------------- for wizard
                     if(data == 1) {
@@ -101,6 +101,12 @@ public class ROM
                             if(bag.checkitem(num) == 1) wz.heal(bag.useItem(num));// use potion
                             else if(bag.checkitem(num) == 0) wz.bootExp(bag.useItem(num)); // use extboost
                         }
+                    }
+                    else if (data == 4) {
+                        wz.MeteorStorm();
+                        bag.getItem();
+                        bag.getItem();
+                        System.out.println("MeteorStorm!!");
                     }
                     else if (data == 99) {
                         System.out.println("Wellcome!! Enter your value for buy more bag");
@@ -123,7 +129,7 @@ public class ROM
             else if(career.equals("knight") == true){
                 while(kn.getHP() != 0){
                     //--------------------------
-                    System.out.println(" 1 to attack // 2 to hit // 3 open inventory // 99 buy more bag // 0 Eng Game");
+                    System.out.println(" 1 to attack // 2 to hit // 3 open inventory 4 use BowlingBash!! // 99 buy more bag // 0 Eng Game");
                     int data = sc.nextInt();
                     //--------------------- for novice
                     if(data == 1) {
@@ -143,6 +149,12 @@ public class ROM
                             if(bag.checkitem(num) == 1) kn.heal(bag.useItem(num));// use potion
                             else if(bag.checkitem(num) == 0) kn.bootExp(bag.useItem(num)); // use extboost
                         }
+                    }
+                    else if (data == 4) {
+                        kn.BowlingBash();
+                        bag.getItem();
+                        bag.getItem();
+                        System.out.println("BowlingBash!!");
                     }
                     else if (data == 99) {
                         System.out.println("Wellcome!! Enter your value for buy more bag");
