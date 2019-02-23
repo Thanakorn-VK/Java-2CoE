@@ -13,6 +13,7 @@ public class Novice
         LEVEL = 1;
     }
     public void att(){
+        HP = HP - 32;
         EXP = EXP + 1;
         //if (EXP >= 5)
         while(EXP >= 5){
