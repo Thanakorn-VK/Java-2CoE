@@ -6,4 +6,7 @@ public class Bootexp extends Item{
         super.setName("EXP-Potion");
         super.setProperty(4);
     }
+    public void showProperty(){
+        System.out.println(""+super.getName()+"have EXP +"+getProperty());
+    }
 }

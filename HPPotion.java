@@ -6,4 +6,7 @@ public class HPPotion extends Item{
         super.setName("Potion");
         super.setProperty(50);
     }
+    public void showProperty(){
+        System.out.println(""+super.getName()+"have HP +"+getProperty());
+    }
 }
